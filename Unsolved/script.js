@@ -30,7 +30,7 @@ var losses = 0;
 if (userChoice === computerChoice) {
   ties++;
   this.alert("It's a Tie!");
-  console.log(this);
+  //   console.log(this);
 } else if (
   (userChoice === 0 && computerChoice === 2) ||
   (userChoice === 2 && computerChoice === 1) ||
@@ -38,7 +38,7 @@ if (userChoice === computerChoice) {
 ) {
   wins++;
   this.alert("Congrats!! You Win!");
-  console.log(this);
+  //   console.log(this);
 } else {
   (computerChoice === 0 && userChoice === 2) ||
     (computerChoice === 2 && userChoice === 1) ||
@@ -47,10 +47,13 @@ if (userChoice === computerChoice) {
   this.alert("Oof!! You Lost");
 }
 
+var tallyCount = alert(
+  "wins: " + wins + " losses: " + losses + " ties: " + ties
+);
+
 // console.log(ties);
 // console.log(wins);
 // console.log(losses);
-// var tallyAlert = ()
 
 //have memory keep count of
 
