@@ -1,0 +1,29 @@
+RPS
+
+game rules...
+r > s
+s > p
+p > r
+
+
+WHAT DATA DO I NEED TO TRACK?
+var...  (js: userChoice; compChoice)
+var r
+var s
+var p
+
+data...
+wins
+losses
+ties
+[IF STATEMENT - construct w Rock (or other, single option) in mind]
+    [keep in mind: && , ||]
+
+memory... (in order to compare two choices so winner can be determined)
+user input
+computer choice
+    can only randomly choose one of 3 options
+        array [0,1,2]
+    CONCEPT: string.random(length)
+
+var = prompt(r, p, s)
