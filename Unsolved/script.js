@@ -14,32 +14,42 @@
 // add prompt(r, p, s) [variables] first
 // alert (win/loss)
 
-console.log(this);
+// console.log(this);
 
 var choice = ["R", "P", "S"];
 var userChoice = prompt("Please Choose R, P, or S");
 var computerChoice = choice[Math.floor(Math.random() * choice.length)];
 
-var userAlert = alert("You have chosen... " + userChoice);
-var computerAlert = alert("The computer has chosen... " + computerChoice);
+var userSelect = alert("You have chosen... " + userChoice);
+var computerSelect = alert("The computer has chosen... " + computerChoice);
+
+var ties = 0;
+var wins = 0;
+var losses = 0;
 
 if (userChoice === computerChoice) {
-  //   ties++;
+  ties++;
   this.alert("It's a Tie!");
+  console.log(this);
 } else if (
-  (userChoice === "R" && computerChoice === "S") ||
-  (userChoice === "S" && computerChoice === "P") ||
-  (userChoice === "P" && computerChoice === "R")
+  (userChoice === 0 && computerChoice === 2) ||
+  (userChoice === 2 && computerChoice === 1) ||
+  (userChoice === 1 && computerChoice === 0)
 ) {
+  wins++;
   this.alert("Congrats!! You Win!");
+  console.log(this);
 } else {
-  (computerChoice === "R" && userChoice === "S") ||
-    (computerChoice === "S" && userChoice === "P") ||
-    (computerChoice === "P" && userChoice === "R");
-  //   losses++;
-  this.alert("Oof!! You Lost!");
+  (computerChoice === 0 && userChoice === 2) ||
+    (computerChoice === 2 && userChoice === 1) ||
+    (computerChoice === 1 && userChoice === 0);
+  losses++;
+  this.alert("Oof!! You Lost");
 }
 
+// console.log(ties);
+// console.log(wins);
+// console.log(losses);
 // var tallyAlert = ()
 
 //have memory keep count of
